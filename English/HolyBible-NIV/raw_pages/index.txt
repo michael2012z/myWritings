@@ -1,0 +1,66 @@
+Genesis : Gen.html
+Exodus : Exo.html
+Leviticus : Lev.html
+Numbers : Num.html
+Deuteronomy : Deut.html
+Joshua : Josh.html
+Judges : Judg.html
+Ruth : Ruth.html
+1 Samuel : Sam_1.html
+2 Samuel : Sam_2.html
+1 Kings : Kng_1.html
+2 Kings : Kng_2.html
+1 Chronicles : Chr_1.html
+2 Chronicles : Chr_2.html
+Ezra : Ezra.html
+Nehemiah : Neh.html
+Esther : Esth.html
+Job : Job.html
+Psalms : Psalm.html
+Proverbs : Prov.html
+Ecclesiastes : Eccl.html
+Song of Songs : Song.html
+Isaiah : Isa.html
+Jeremiah : Jer.html
+Lamentations : Lam.html
+Ezekiel : Ezek.html
+Daniel : Dan.html
+Hosea : Hosea.html
+Joel : Joel.html
+Amos : Amos.html
+Obadiah : Obad.html
+Jonah : Jonah.html
+Micah : Micah.html
+Nahum : Nahum.html
+Habakkuk : Hab.html
+Zephaniah : Zeph.html
+Haggai : Hag.html
+Zechariah : Zech.html
+Malachi : Mal.html
+Matthew : Matt.html
+Mark : Mark.html
+Luke : Luke.html
+John : John.html
+Acts : Acts.html
+Romans : Rom.html
+1 Corinthians : Cor_1.html
+2 Corinthians : Cor_2.html
+Galatians : Gal.html
+Ephesians : Eph.html
+Philippians : Phil.html
+Colossians : Col.html
+1 Thessalonians : Ths_1.html
+2 Thessalonians : Ths_2.html
+1 Timothy : Tim_1.html
+2 Timothy : Tim_2.html
+Titus : Titus.html
+Philemon : Phmn.html
+Hebrews : Heb.html
+James : James.html
+1 Peter : Pet_1.html
+2 Peter : Pet_2.html
+1 John : John_1.html
+2 John : John_2.html
+3 John : John_3.html
+Jude : Jude.html
+Revelation : Rev.html

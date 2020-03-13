@@ -1,0 +1,4 @@
+USER=root
+GOROOT=/usr/local/go
+GOPATH=~/ws
+PATH=$GOROOT/bin:$GOPATH/bin:$PATH

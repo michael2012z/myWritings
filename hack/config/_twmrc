@@ -1,0 +1,362 @@
+#
+# $Xorg: system.twmrc,v 1.3 2000/08/17 19:54:08 cpqbld Exp $
+# 
+# Default twm configuration file; needs to be kept small to conserve string
+# space in systems whose compilers don't handle medium-sized strings.
+#
+# Sites should tailor this file, providing any extra title buttons, menus, etc.
+# that may be appropriate for their environment.  For example, if most of the
+# users were accustomed to uwm, the defaults could be set up not to decorate
+# any windows and to use meta-keys.
+#
+# $XFree86: xc/programs/twm/system.twmrc,v 1.4 2001/01/17 23:45:08 dawes Exp $
+#
+
+NoGrabServer
+RestartPreviousState
+DecorateTransients
+TitleFont "-adobe-helvetica-bold-r-normal--*-120-*-*-*-*-*-*"
+ResizeFont "-adobe-helvetica-bold-r-normal--*-120-*-*-*-*-*-*"
+MenuFont "-adobe-helvetica-bold-r-normal--*-120-*-*-*-*-*-*"
+IconFont "-adobe-helvetica-bold-r-normal--*-100-*-*-*-*-*-*"
+#IconManagerFont "-adobe-helvetica-bold-r-normal--*-100-*-*-*"
+ClientBorderWidth
+
+ShowIconManager
+SortIconManager
+IconManagerGeometry "180x100+2+2"
+
+#BorderWidth 6
+#NoTitleHighlight
+
+Color
+{
+    BorderColor "slategrey"
+    DefaultBackground "rgb:2/a/9"
+    DefaultForeground "gray85"
+    TitleBackground "rgb:2/a/9" {
+"emacs" "rgb:a/1/1"
+"gnome-terminal" "rgb:a/a/1"
+}
+    TitleForeground "gray85"
+    MenuBackground "rgb:2/a/9"
+    MenuForeground "gray85"
+    MenuBorderColor "slategrey"
+    MenuTitleBackground "gray70"
+    MenuTitleForeground "rgb:2/a/9"
+    IconBackground "rgb:2/a/9"
+    IconForeground "gray85"
+    IconBorderColor "gray85"
+    IconManagerBackground "rgb:2/a/9"
+    IconManagerForeground "gray85"
+}
+
+#
+# Define some useful functions for motion-based actions.
+#
+MoveDelta 3
+Function "move-or-lower" { f.move f.deltastop f.lower }
+Function "move-or-raise" { f.move f.deltastop f.raise }
+Function "move-or-iconify" { f.move f.deltastop f.iconify }
+
+#
+# Set some useful bindings.  Sort of uwm-ish, sort of simple-button-ish
+#
+Button1 = : root : f.menu "main"
+Button3 = : root : f.menu "windowops"
+
+Button1 = m : window|icon : f.function "move-or-lower"
+Button2 = m : window|icon : f.iconify
+Button3 = m : window|icon : f.function "move-or-raise"
+
+Button1 = : title : f.function "move-or-raise"
+Button3 = : title : f.raiselower
+
+Button1 = Control : title : f.focus
+
+Button1 = : icon : f.function "move-or-iconify"
+Button2 = : icon : f.iconify
+
+Button1 = : iconmgr : f.iconify
+Button2 = : iconmgr : f.iconify
+
+"Up" = m : root|window|frame|title|iconmgr : f.circleup
+"Down" = m : root|window|frame|title|iconmgr : f.circledown
+
+
+#
+# And a menus with the usual things
+#
+menu "main"
+{
+"Main Menu" f.title
+# "Debian" f.menu "/Debian"
+"Gnome Terminal"    f.exec  "/usr/bin/gnome-terminal &"
+"Emacs" f.exec "/usr/local/bin/emacs &"
+"Firefox"    f.exec  "/usr/bin/firefox &"
+"" f.nop
+"Xclock"    f.exec  "xclock -digital -update 1 &"
+"" f.nop
+"Show Icon Manager" f.showiconmgr
+"Hide Icon Manager" f.hideiconmgr
+"" f.nop
+"Exit" f.menu "Quit-Verify"
+}
+
+menu "Quit-Verify"
+{
+"Really quit twm?" f.title
+"No, restart twm" f.restart
+"Yes, really quit" f.quit
+}
+
+menu "windowops"
+{
+"Window Ops" f.title
+"" f.nop
+"Iconify" f.iconify
+"Resize" f.resize
+"Move" f.move
+"Raise" f.raise
+"Lower" f.lower
+"" f.nop
+"Focus" f.focus
+"Unfocus" f.unfocus
+"" f.nop
+"Delete" f.delete
+"Destroy" f.destroy
+}
+
+# Automatically generated file. Do not edit (see /usr/share/doc/menu/html/index.html)
+
+menu "/Debian/Applications/Accessibility"
+{
+  "Xmag"    f.exec  "xmag &"
+}
+menu "/Debian/Applications/Data Management"
+{
+  "Tomboy"    f.exec  "/usr/bin/tomboy &"
+}
+menu "/Debian/Applications/Editors"
+{
+  "Gedit"    f.exec  "/usr/bin/gedit &"
+  "Nano"    f.exec  "x-terminal-emulator  -T \"Nano\" -e sh -c \"/bin/nano\" &"
+  "Xedit"    f.exec  "xedit &"
+}
+menu "/Debian/Applications/File Management"
+{
+  "Baobab"    f.exec  "/usr/bin/baobab &"
+  "Brasero"    f.exec  "/usr/bin/brasero &"
+  "File-Roller"    f.exec  "/usr/bin/file-roller &"
+  "GNOME Search Tool"    f.exec  "/usr/bin/gnome-search-tool &"
+  "Nautilus"    f.exec  "/usr/bin/nautilus &"
+}
+menu "/Debian/Applications/Graphics"
+{
+  "GNOME Screenshot Tool"    f.exec  "/usr/bin/gnome-panel-screenshot &"
+  "OpenOffice.org Draw"    f.exec  "/usr/bin/oodraw &"
+  "X Window Snapshot"    f.exec  "xwd | xwud &"
+}
+menu "/Debian/Applications/Network/Communication"
+{
+  "Evolution"    f.exec  "/usr/bin/evolution &"
+  "Telnet"    f.exec  "x-terminal-emulator  -T \"Telnet\" -e sh -c \"/usr/bin/telnet\" &"
+  "Terminal Server Client"    f.exec  "/usr/bin/tsclient -f &"
+  "Vinagre"    f.exec  "vinagre &"
+  "Xbiff"    f.exec  "xbiff &"
+}
+menu "/Debian/Applications/Network/File Transfer"
+{
+  "Transmission BitTorrent Client (GTK)"    f.exec  "/usr/bin/transmission &"
+}
+menu "/Debian/Applications/Network/Web Browsing"
+{
+  "Firefox Browser"    f.exec  "/usr/bin/firefox &"
+  "w3m"    f.exec  "x-terminal-emulator  -T \"w3m\" -e sh -c \"/usr/bin/w3m /usr/share/doc/w3m/MANUAL.html\" &"
+}
+menu "/Debian/Applications/Network"
+{
+  "Communication" f.menu "/Debian/Applications/Network/Communication"
+  "File Transfer" f.menu "/Debian/Applications/Network/File Transfer"
+  "Web Browsing" f.menu "/Debian/Applications/Network/Web Browsing"
+}
+menu "/Debian/Applications/Office"
+{
+  "OpenOffice.org Calc"    f.exec  "/usr/bin/oocalc &"
+  "OpenOffice.org Impress"    f.exec  "/usr/bin/ooimpress &"
+  "OpenOffice.org Writer"    f.exec  "/usr/bin/oowriter &"
+}
+menu "/Debian/Applications/Programming"
+{
+  "Erlang Shell"    f.exec  "x-terminal-emulator  -T \"Erlang Shell\" -e sh -c \"/usr/bin/erl\" &"
+  "GDB"    f.exec  "x-terminal-emulator  -T \"GDB\" -e sh -c \"/usr/bin/gdb\" &"
+  "Meld"    f.exec  "/usr/bin/meld &"
+  "Python (v2.6)"    f.exec  "x-terminal-emulator  -T \"Python (v2.6)\" -e sh -c \"/usr/bin/python2.6\" &"
+  "Tclsh8.4"    f.exec  "x-terminal-emulator  -T \"Tclsh8.4\" -e sh -c \"/usr/bin/tclsh8.4\" &"
+  "TkWish8.4"    f.exec  "x-terminal-emulator -e /usr/bin/wish8.4 &"
+}
+menu "/Debian/Applications/Science/Mathematics"
+{
+  "Bc"    f.exec  "x-terminal-emulator  -T \"Bc\" -e sh -c \"/usr/bin/bc\" &"
+  "Dc"    f.exec  "x-terminal-emulator  -T \"Dc\" -e sh -c \"/usr/bin/dc\" &"
+  "GCalcTool"    f.exec  "/usr/bin/gcalctool &"
+  "OpenOffice.org Math"    f.exec  "/usr/bin/oomath &"
+  "Xcalc"    f.exec  "xcalc &"
+}
+menu "/Debian/Applications/Science"
+{
+  "Mathematics" f.menu "/Debian/Applications/Science/Mathematics"
+}
+menu "/Debian/Applications/Shells"
+{
+  "Bash"    f.exec  "x-terminal-emulator  -T \"Bash\" -e sh -c \"/bin/bash --login\" &"
+  "Dash"    f.exec  "x-terminal-emulator  -T \"Dash\" -e sh -c \"/bin/dash -i\" &"
+  "Sh"    f.exec  "x-terminal-emulator  -T \"Sh\" -e sh -c \"/bin/sh --login\" &"
+}
+menu "/Debian/Applications/Sound"
+{
+  "gmix (Gnome 2.0 Mixer)"    f.exec  "/usr/bin/gnome-volume-control &"
+  "grecord (GNOME 2.0 Recorder)"    f.exec  "/usr/bin/gnome-sound-recorder &"
+  "Rhythmbox"    f.exec  "/usr/bin/rhythmbox &"
+}
+menu "/Debian/Applications/System/Administration"
+{
+  "DSL/PPPoE configuration tool"    f.exec  "x-terminal-emulator  -T \"DSL/PPPoE configuration tool\" -e sh -c \"/usr/sbin/pppoeconf\" &"
+  "Editres"    f.exec  "editres &"
+  "Gnome Control Center"    f.exec  "/usr/bin/gnome-control-center &"
+  "GNOME Network Tool"    f.exec  "/usr/bin/gnome-nettool &"
+  "OpenJDK Java 6 Policy Tool"    f.exec  "/usr/lib/jvm/java-6-openjdk/bin/policytool &"
+  "pppconfig"    f.exec  "x-terminal-emulator  -T \"pppconfig\" -e sh -c \"su-to-root -p root -c /usr/sbin/pppconfig\" &"
+  "Shares Admin"    f.exec  "/usr/bin/shares-admin &"
+  "Time Admin"    f.exec  "/usr/bin/time-admin &"
+  "User accounts Admin"    f.exec  "/usr/bin/users-admin &"
+  "Xclipboard"    f.exec  "xclipboard &"
+  "Xfontsel"    f.exec  "xfontsel &"
+  "Xkill"    f.exec  "xkill &"
+  "Xrefresh"    f.exec  "xrefresh &"
+}
+menu "/Debian/Applications/System/Hardware"
+{
+  "Xvidtune"    f.exec  "xvidtune &"
+}
+menu "/Debian/Applications/System/Language Environment"
+{
+  "Input Method Swicher"    f.exec  "x-terminal-emulator  -T \"Input Method Swicher\" -e sh -c \"/usr/bin/im-switch\" &"
+}
+menu "/Debian/Applications/System/Monitoring"
+{
+  "GNOME Log Viewer"    f.exec  "/usr/bin/gnome-system-log &"
+  "GNOME system monitor"    f.exec  "/usr/bin/gnome-system-monitor &"
+  "Pstree"    f.exec  "x-terminal-emulator  -T \"Pstree\" -e sh -c \"/usr/bin/pstree.x11\" &"
+  "Top"    f.exec  "x-terminal-emulator  -T \"Top\" -e sh -c \"/usr/bin/top\" &"
+  "Xconsole"    f.exec  "xconsole -file /dev/xconsole &"
+  "Xev"    f.exec  "x-terminal-emulator -e xev &"
+  "Xload"    f.exec  "xload &"
+}
+menu "/Debian/Applications/System/Package Management"
+{
+  "Synaptic Package Manager"    f.exec  "/usr/bin/gksu /usr/sbin/synaptic &"
+}
+menu "/Debian/Applications/System/Security"
+{
+  "Seahorse"    f.exec  "/usr/bin/seahorse &"
+}
+menu "/Debian/Applications/System"
+{
+  "Administration" f.menu "/Debian/Applications/System/Administration"
+  "Hardware" f.menu "/Debian/Applications/System/Hardware"
+  "Language Environment" f.menu "/Debian/Applications/System/Language Environment"
+  "Monitoring" f.menu "/Debian/Applications/System/Monitoring"
+  "Package Management" f.menu "/Debian/Applications/System/Package Management"
+  "Security" f.menu "/Debian/Applications/System/Security"
+}
+menu "/Debian/Applications/Terminal Emulators"
+{
+  "Gnome Terminal"    f.exec  "/usr/bin/gnome-terminal &"
+  "XTerm"    f.exec  "xterm &"
+  "X-Terminal as root (GKsu)"    f.exec  "/usr/bin/gksu -u root /usr/bin/x-terminal-emulator &"
+  "XTerm (Unicode)"    f.exec  "uxterm &"
+}
+menu "/Debian/Applications/Text"
+{
+  "Character map"    f.exec  "/usr/bin/gucharmap &"
+  "GNOME Dictionary"    f.exec  "/usr/bin/gnome-dictionary &"
+}
+menu "/Debian/Applications/Video"
+{
+  "Totem"    f.exec  "/usr/bin/totem &"
+}
+menu "/Debian/Applications/Viewers"
+{
+  "Evince"    f.exec  "/usr/bin/evince &"
+  "Eye of GNOME"    f.exec  "/usr/bin/eog &"
+  "Shotwell"    f.exec  "/usr/bin/shotwell &"
+  "Xditview"    f.exec  "xditview &"
+}
+menu "/Debian/Applications"
+{
+  "Accessibility" f.menu "/Debian/Applications/Accessibility"
+  "Data Management" f.menu "/Debian/Applications/Data Management"
+  "Editors" f.menu "/Debian/Applications/Editors"
+  "File Management" f.menu "/Debian/Applications/File Management"
+  "Graphics" f.menu "/Debian/Applications/Graphics"
+  "Network" f.menu "/Debian/Applications/Network"
+  "Office" f.menu "/Debian/Applications/Office"
+  "Programming" f.menu "/Debian/Applications/Programming"
+  "Science" f.menu "/Debian/Applications/Science"
+  "Shells" f.menu "/Debian/Applications/Shells"
+  "Sound" f.menu "/Debian/Applications/Sound"
+  "System" f.menu "/Debian/Applications/System"
+  "Terminal Emulators" f.menu "/Debian/Applications/Terminal Emulators"
+  "Text" f.menu "/Debian/Applications/Text"
+  "Video" f.menu "/Debian/Applications/Video"
+  "Viewers" f.menu "/Debian/Applications/Viewers"
+}
+menu "/Debian/Games/Board"
+{
+  "Gnome Mahjongg"    f.exec  "/usr/games/mahjongg &"
+}
+menu "/Debian/Games/Card"
+{
+  "Gnome FreeCell"    f.exec  "/usr/games/sol --variation freecell &"
+  "Gnome Solitaire Games"    f.exec  "/usr/games/sol &"
+}
+menu "/Debian/Games/Puzzles"
+{
+  "gbrainy"    f.exec  "/usr/games/gbrainy &"
+  "Gnome Sudoku"    f.exec  "/usr/games/gnome-sudoku &"
+  "Gnomine"    f.exec  "/usr/games/gnomine &"
+  "Quadrapassel"    f.exec  "/usr/games/quadrapassel &"
+}
+menu "/Debian/Games/Toys"
+{
+  "Oclock"    f.exec  "oclock &"
+  "Xclock (analog)"    f.exec  "xclock -analog &"
+  "Xclock (digital)"    f.exec  "xclock -digital -update 1 &"
+  "Xeyes"    f.exec  "xeyes &"
+  "Xlogo"    f.exec  "xlogo &"
+}
+menu "/Debian/Games"
+{
+  "Board" f.menu "/Debian/Games/Board"
+  "Card" f.menu "/Debian/Games/Card"
+  "Puzzles" f.menu "/Debian/Games/Puzzles"
+  "Toys" f.menu "/Debian/Games/Toys"
+}
+menu "/Debian/Help"
+{
+  "Info"    f.exec  "x-terminal-emulator  -T \"Info\" -e sh -c \"info\" &"
+  "Xman"    f.exec  "xman &"
+  "yelp"    f.exec  "/usr/bin/yelp &"
+}
+menu "/Debian/Window Managers"
+{
+ "Twm" f.startwm "twm"
+}
+menu "/Debian"
+{
+  "Applications" f.menu "/Debian/Applications"
+  "Games" f.menu "/Debian/Games"
+  "Help" f.menu "/Debian/Help"
+  "Window Managers" f.menu "/Debian/Window Managers"
+}

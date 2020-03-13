@@ -1,0 +1,7 @@
+[user]
+	name = Michael Zhao
+	email = michael2012zhao@hotmail.com
+[core]
+	editor = "emacs -nw "
+[gitreview]
+	username = miczha01

@@ -1,0 +1,278 @@
+BENE: well
+AM: to love
+BELL: war
+PAC: agree
+CRIM: fault or crime
+PROB: prove or proof
+GRAV: heavy, weighty, serious
+LEV: light
+Mythology, History: none
+MANIA: madness
+PSYCH: breath, life, soul
+CEPT: take, seize
+FIN: end, boundary
+JECT: throw, hurl
+TRACT: drag, draw
+DUC/DUCT: to lead
+SEQU: to follow
+Mythology: none
+AMBI: on both sides, around
+EPI: on over, attached to
+HYP/HYPO: below, under
+THERM/THERMO: warm
+POLY: many
+PRIM: first
+HOM/HOMO: same
+DIS: apart
+Latin Borrowings: none
+VOR: to eat
+CARN: flesh, meat
+CRED: to believe
+FID: faith, trust
+CURR/CURS: to run
+PED: foot
+FLECT: to bend
+POST: after, behind
+Mythology: none
+MAL: bad
+CATA: down
+PROT/PROTO: first in time, first formed
+ANTE: before, in front of
+ORTHO: straight, right or true
+RECT: straight, right
+EU: well
+DYS: bad, difficult
+Latin Borrowings: none
+EQU: equal
+QUIS: to seek or obtain
+PLE/PLEN: to fill
+METR/METER: measure
+AUD: hearing
+SON: sound
+ERR: to wander
+CED: to proceed
+Mythology and History: none
+VIS: see
+SPECT: to look at
+VOC: voice, speak
+PHON: voice, sound, speech
+CUR: care for
+PERI: around
+SENS: feeling, sense
+SOPH: wise
+Mythology and History: none
+PORT: to carry
+PEND: to hang, to weigh
+PAN: all, completely, whole
+EXTRA: outside, beyond
+PHOT: light
+LUC: light, to shine ro glitter
+MOR/MORT: to die, death
+TROPH: nourishment
+Mythology and History: none
+HER: to stick
+FUG: to flee or escape
+COSM: order
+SCI: to know
+JUNCT: to join
+PART: part
+MIS: to send
+PEL: to move or drive
+Mythology: none
+PUT: to think, consider, or believe
+LOG: word, speech, reason
+TERR: earth
+MAR: sea
+PATH: feeling, suffering
+PEN/PUN: penalty
+MATR/MATER: mother
+AQU: water
+Mythology: none
+CANT: sing
+LINGU: tongue
+SPIR: breath, breathe
+VER: truth
+TURB: to throw into confusion or upset
+VOLU/VOLV: to roll, wind, turn around
+FAC: to make or do
+LUM: light
+Mythology and History: none
+UMBER: shadow
+VEST: to clothe, to dress
+THE/THEO: god
+ICON: image
+URB: city
+CULT: care
+DEM/DEMO: people
+POPUL: people
+Animal: ine
+CORD: heart
+CULP: guilt
+DICT: to speak
+GNI/GNO: to know
+GRAPH: to write
+ART: skill
+FORT: strong
+CIS: to cut, cut down, slay
+Animal: none
+CRYPT: hidden
+AB/ABS: from, away, off
+TROP: turn, change
+PED: child, foot
+NEO: new
+NOV: new
+POS: to put, to place
+TEN: hold, hold on to
+MONO: along, single
+UNI: one
+TERM/TERMIN: to limit
+GEO: earth
+SPHER: ball
+VERT: to turn, to turn around
+MORPH: shape
+FORM: shape, form
+DOC/DOCT: to teach
+TUT/TUI: to look after, guide
+DI/DUP: two
+BI/BIN: two
+TOP: place
+CENTR/CENTER: sharp point, center point of circle
+DOM: house, master
+OMNI: all
+HOL/HOLO: whole
+RETRO: back, backward, behind
+TEMPOR: time
+CHRON: time
+TRI: three
+ANIM: breath, soul
+FIG: to shape or mold
+ANN/ENN: year
+EV: age, lifetime
+CORP: body
+TANG/TACT: to touch
+CODI/CODE: document written on wooden tablets
+SIGN: mark or sign
+QUARD/QUART: four in Latin
+TETR: four in Greek
+CAPIT: head
+ANTHROP: human being
+KINE: movement
+DYNAM: power
+GRAD: step, degree
+REG: rule
+CRIT: to judge, to decide
+JUR: to swear, take an oath
+PENT: five in Greek
+QUINT: five in Latin
+BIO: life
+GEN: birth
+FUNCT: to perform, carry out
+MUT: to change
+FRACT: to break or shatter
+TELE: distant
+PHIL: love
+NEG: to say no
+DEC: ten
+CENT: one hundred
+NOM: name
+PATER/PATR: father
+LEGA: to appoint, to send as a deputy
+GREG: herd, flock
+FLU: to flow
+PREHEND/PREHENS: to seize
+TEMPER: to moderate or keep within limits, to mix
+PURG: to clean
+MILL: a thousand, a thousandth
+HEMI/SEMI: half
+SUB: under
+HYPER: above, beyond
+PRE: before
+PARA: beside, closely related to
+META: behind, beyond
+PER: through, throughout
+ANT/ANTI: against
+CONTRA: against, contrary to
+Greek and Latin Borrowings: none
+ACER/ACR: sharp, sour
+STRICT: to draw tight, bind or tie
+STRU/STRUCT: to put together, build, arrange
+PROP/PROPRI: own
+TORT: to twist, wind, or wrench
+VIV: to live or be alive
+SERV: to be subject to
+CLUS: to close
+Greek and Latin Borrowings: none
+TEXT: to weave
+PLAC: to please or be agreeable to
+AUT/AUTO: self, same
+GRAT: pleasing, welcome, agreeable
+CLAM/CLAIM: to shout or cry out
+CRAC/CRAT: power
+PUNC: point
+POT: able
+Greek and Latin Borrowings: none
+MAND: entrust, order
+UND: wave, to rise in waves
+SANCT: holy
+LOQU: to talk
+VIR: man
+VAL: strength
+CRE/CRET: to come into being, to grow
+FUS: to pour out, to melt
+Greek and Latin Borrowings: none
+VERB: word
+SIMIL/SIMUL: like, resembling, similar
+SCEND: to climb
+ONYM: name
+SCRIB/SCRIP: to write
+FALL: to deceive
+SOLU: to loosen, free, release
+HYDR: water
+Greek and Latin Borrowings: none
+MUR: wall
+POLIS/POLIT: city
+NUMER: number
+KILO: thousand
+MICRO: small
+MULTI: many
+PAR: equal
+PHOB: fear
+ITIS: disease
+NANO: extremely small, 1/billion
+SUPER: over, higher
+DE: down, away
+NUL/NULL: none
+ARM: weapons, tools
+SURG: to rise, spring up
+STRAT: spread
+LATER: side
+TOM: cut
+IATR: healer, physician
+MEDI: middle
+OID: appearance, form
+SCOP: to look at
+TRANS: through, across
+PRO: for, favoring
+PRO: before
+RE: again
+RE: back, backward
+DERM: skin
+ENDO: within
+NECRO: dead body
+PALEO: ancient
+CIRCU/CIRCUM: circle
+MINI/MINU: small, least
+INTER: between
+SUR: super, over, above
+CO: with, together
+SYN: together
+Mythology and History: none
+TOXI: poison
+TEN/TENU: thin
+TECHNI/TECHNO: art, craft, skill
+LONG: long
+IDIO: one's own, private
+AER/AERO: air
+CAD: to fall
+TRIB: to give, to pay
+Mythology and History: none
