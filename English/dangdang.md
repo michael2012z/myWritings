@@ -1,4 +1,4 @@
-# superhero(s)
+# superhero(s) = super + hero
 ## superman = super + man
 ![](https://i.ytimg.com/vi/X5xvlXV9crE/maxresdefault.jpg)
 
