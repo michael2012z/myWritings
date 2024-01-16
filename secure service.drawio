@@ -1,9 +1,39 @@
-<mxfile host="app.diagrams.net" modified="2024-01-16T07:20:41.443Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="22.1.18" etag="07aRp7kNONsh_7n9n3wP" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-16T07:33:39.303Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="SZjjrZJwz53YJTEXXhgP" version="22.1.18" type="github">
   <diagram name="Page-1" id="2MzvoFn6kp8yeu67WvF-">
-    <mxGraphModel>
+    <mxGraphModel dx="954" dy="553" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="pf3geLhDpaOLOs4rF1RE-6" value="Linux Kernel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="340" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pf3geLhDpaOLOs4rF1RE-1" value="TLS Application" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pf3geLhDpaOLOs4rF1RE-2" value="Mbed-TLS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pf3geLhDpaOLOs4rF1RE-3" value="PARSEC Driver&lt;br&gt;for Mbed-TLS" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pf3geLhDpaOLOs4rF1RE-4" value="PARSEC Service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="220" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pf3geLhDpaOLOs4rF1RE-5" value="PARSEC Backend" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pf3geLhDpaOLOs4rF1RE-9" value="Xen Hypervisor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="400" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pf3geLhDpaOLOs4rF1RE-10" value="TrustedFirmware-A" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="460" width="450" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pf3geLhDpaOLOs4rF1RE-11" value="OP-TEE" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="340" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pf3geLhDpaOLOs4rF1RE-12" value="Secure Element Proxy&lt;br&gt;(Secure Application)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="280" width="150" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
